@@ -399,3 +399,183 @@ Phần tử HTML `<head>` là vùng chứa cho các phần tử sau : `<title>`,
 - Thẻ `<base>` phải có một `href` hoặc một thuộc tính đích hoặc cả hai.
 
 - Chỉ có thể có một phần tử `<base>` duy nhất trong một tài liệu!
+
+## 12. HTML Layout - Bố cục
+- Các trang web thường hiển thị nội dung theo bố cục trong nhiều cột (giống như các tờ báo).
+### 12.1. Bố cục của HTML
+- HTML có một số yếu tố ngữ nghĩa xác định các thành phần khác nhau của một trang web:
+    <p align = "center">
+    <img width = 500 src="../images/lesson2/layout1.png">
+    </p>
+
+    <p align = "center">
+    <img width = 500 src="../images/lesson2/layout.png">
+    </p>
+
+    - `<header>`: Xác định tiêu đề cho một tài liệu hoặc một phần
+    - `<nav>`: Xác định một tập hợp các liên kết điều hướng
+    - `<section>`: Xác định một phần trong tài liệu
+    - `<article>`: Xác định một nội dung độc lập, khép kín
+    - `<aside>`: Xác định nội dung ngoài nội dung (như một thanh bên)
+    - `<footer>`: Xác định chân trang cho một tài liệu hoặc một phần
+    - `<details>`: Xác định các chi tiết bổ sung mà người dùng có thể mở và đóng theo yêu cầu
+    - `<summary>`: Xác định tiêu đề cho phần tử `<details>`
+
+### 12.2. Các kỹ thuật tạo bố cục HTML
+- Có 4 kỹ thuật khác nhau để tạo bố cục nhiều cột:  
+
+    - CSS framework
+    - Thuộc tính `float` CSS
+    - CSS flexbox
+    - CSS grid (lưới CSS)
+
+## 13. HTML Responsive
+### 13.1. Định nghĩa
+- `Responsive` là một tính từ để chỉ một website có thể hiển thị nội dung tương thích trên mọi kích thước hiển thị của trình duyệt (ví dụ trên laptop, máy tính bảng hay điện thoại).
+- `Responsive Web Design` (RWD) là xu hướng mới theo đó quy trình thiết kế và phát triển web sẽ đáp ứng mọi thiết bị và môi trường của người dùng theo các tiêu chí kích thước và chiều của màn hình thiết bị. 
+- Responsive Web Design được tạo nên từ 3 thành phần cơ bản:
+
+    - Flexible Grid based layout
+    - Media Queries
+    - Flexible Media
+
+### 13.2.Tại sao cần Responsive Web Design
+- Giúp tiết kiệm rất nhiều thời gian và chi phí khi mà không cần phải duy trì từng phiên bản web khác nhau cho điện thoại và máy tính
+- `Responsive Web Desig`n giúp cải thiện SEO (search ranking) cho trang web khi mà mọi luồng đều chỉ dẫn đến một địa chỉ URL duy nhất thay vì nhiều URL khác nhau.
+- `Responsive Design` giúp dễ dàng bảo trì trang web khi mà nó `không liên quan gì đến phía server`, chỉ việc thay đổi html và css để thay đổi giao diện hoặc bố cục thích hợp với các thiết bị khác nhau.
+### 13.3. Cách áp dụng Responsive lên website
+### 13.3.1. Flexible Grid based layout
+Khai báo `meta viewport`
+- `Viewport` là khung hình người dùng nhìn thấy trên thiết bị của họ khi vào một trang web bất kì. 
+- Đặt thẻ `<meta>` dưới đây vào trong cặp thẻ `<head>` của tài liệu HTML  
+    `<meta name="viewport" content="width=device-width, initial-scale=1">`  
+    - `meta viewport` nghĩa là một thẻ thiết lập cho trình duyệt hiển thị tương ứng với kích thước màn hình. Chẳng hạn như ví dụ trên, có nghĩa là chúng ta sẽ thiết lập trình duyệt hiển thị cố định và tương ứng trên tất cả các thiết bị dựa vào chiều rộng của thiết bị (`device-width`) và không cho phép người dùng phóng to (thiết lập `initial-scale` với giá trị cố định là 1). 
+
+    <p align = "center">
+    <img width = 500 src="../images/lesson2/viewport.png">
+    </p>
+### 13.3.2. Sử dụng kỹ thuật CSS
+### a. Media Queries
+- `Media Queries` là một kỹ thuật CSS được giới thiệu trong CSS3. Ta sử dụng cú pháp `@media` để bao gồm một khối các thuộc tính CSS chỉ khi một điều kiện nhất định là đúng. Nói một cách đơn giản là ta sẽ định nghĩa CSS riêng cho một nhóm các thiết bị có kích thước giống nhau.
+
+- `Media Queries` có thể được sử dụng trực tiếp trong thẻ HTML hoặc viết bên trong file css. (*Nên sử dụng `@media` bên trong css để tránh việc phải viết lặp lại nhiều lần*).
+
+    `@media all and (max-width: 1024px) {...}`
+
+    `@media only screen and (orientation: portrait) {...}`
+
+- Các thuộc tính trong Media Queries  
+
+    - `Height & Width`: Chiều cao và chiều rộng của viewport được chỉ định qua từ khóa height và width. Giá trị của height hoặc width có thể là đơn vị độ dài, tương đối hoặc tuyệt đối. Chúng còn thường được đi kèm với các tiền tố min và max để xác định giới hạn màn hình mà các truy vấn được áp dụng. VD - `@media all and (min-width: 320px) and (max-width: 780px) {...}`
+    - `Orientation: Portrait / Landscape`: Media queries còn được sử dụng để xác định hướng của browser thiết bị sử dụng từ khóa orientation, cho phép ta xác định thiết bị đang được xem nằm ở `hướng dọc (portrait)` hay `ngang (landscape)`. VD - `@media all and (orientation: landscape) {...}`
+    - `Aspect Ratio`: `Tỉ lệ khung hình (aspect ratio)` trong media queries cho phép ta chỉ định tỉ lệ chiều rộng\chiều cao của thiết bị mà truy vấn được áp dụng . `@media all and (min-device-aspect-ratio: 16/9) {...}`
+
+- *`Nguyên tắc Mobile First trong Responsive`*: Moble First nghĩa là luôn thiết kế ứng dụng cho màn hình mobile trước rồi mới đến các màn hình lớn dần. (Điều này giúp trang web hiển thị nhanh hơn trên các thiết bị màn hình nhỏ hơn) 
+
+    <p align = "center">
+    <img width = 500 src="../images/lesson2/mobile_first.png">
+    </p>
+
+### b. Flexible Media
+- Khi mà `viewport` thay đổi kích thước thì các đa phương tiện (ảnh, video,..) cũng cần có khả năng thay đổi sao cho phù hợp.
+- Một cách thông dụng là thiết lập `width là 100%` cùng với `height: auto`. Khi đó ảnh hoặc video sẽ thay đổi chiều rộng và chiều cao sao cho phù hợp với độ dãn của màn hình.
+
+    `<img src="img_girl.jpg" style="width:100%; height:auto;">`
+- Nếu muốn ảnh hoặc video thay đổi theo viewport nhưng không quá kích thước gốc của nó ta có thể sử dụng thuộc tính max-width:   
+`<img src="img_girl.jpg" style="max-width:100%;height:auto;">`
+
+### 13.4. Responsive Web Design - Frameworks
+-  W3.CSS
+- Bootstrap
+
+## 14. HTML `semantic` elements: phần tử ngữ ngĩa
+- Phần tử ngữ nghĩa mô tả rõ ràng ý nghĩa của nó đối với cả trình duyệt  và người lập trình
+### 14.1. Các phần tử ngữ nghĩa trong HTML
+### 14.1.1. Phần tử HTML `<section>`
+- Phần tử `<section>` xác định một phần trong tài liệu.
+
+- Theo tài liệu HTML của W3C: "Phần là một nhóm nội dung theo chủ đề, thường có một tiêu đề."
+
+- Ví dụ về nơi một phần tử `<section>` có thể được sử dụng:
+
+    - Chương
+    - Giới thiệu
+    - Mục tin tức
+    - Thông tin liên lạc
+
+### 14.1.2. Phần tử HTML `<article>` 
+- Phần tử `<article>` chỉ định nội dung độc lập, khép kín.
+
+- Một bài báo nên tự nó có ý nghĩa và có thể phân phối nó một cách độc lập với phần còn lại của trang web.
+
+- Ví dụ về nơi phần tử `<article>` có thể sử dụng:
+
+    - Bài đăng trên diễn đàn
+    - Bài đăng trên blog
+    - Ý kiến ​​người sử dụng
+    - Thẻ sản phẩm
+    - Các bài báo
+
+### 14.1.3 Phần tử HTML `<header>`
+- Phần tử `<header>` đại diện cho một vùng chứa cho nội dung giới thiệu hoặc một tập hợp các liên kết điều hướng.
+
+- Một phần tử `<header>` thường chứa:
+
+    - Một hoặc nhiều phần tử tiêu đề (`<h1>` - `<h6>`)
+    - Logo hoặc biểu tượng
+    - Thông tin về quyền tác giả
+
+*Lưu ý*: Chúng ta có thể có nhiều phần tử `<header>` trong một tài liệu HTML. Tuy nhiên, không thể đặt `<header>` trong một phần tử `<footer>`, `<address>`, hay một `<header>` khác.
+
+### 14.1.4. Phần tử HTML `<footer>`
+- Phần tử `<footer>` xác định chân trang cho tài liệu hoặc một phần trong tài liệu.
+
+- Một phần tử `<footer>` thường chứa:
+
+    - Thông tin về quyền tác giả
+    - Thông tin bản quyền
+    - Thông tin liên lạc
+    - Sơ đồ trang web
+    - Quay lại liên kết đầu
+    - Tài liệu liên quan
+- Có thể có nhiều phần tử `<footer>` trong một tài liệu.
+
+### 14.1.5. Phần tử HTML `<nav>`
+- Phần tử `<nav>` xác định một tập hợp các liên kết điều hướng.
+
+*Lưu ý*:  `KHÔNG` phải tất cả các liên kết của một tài liệu phải nằm bên trong một phần tử `<nav>`. Phần tử `<nav>` này chỉ dành cho các khối liên kết điều hướng chính.
+    <p align = "center">
+    <img width = 500 src="../images/lesson2/nav.png">
+    </p>
+
+### 14.1.6. Phần tử HTML `<aside>`
+- Phần tử `<aside>` xác định một số nội dung ngoài nội dung mà được đặt trong trang (như một thanh bên).
+
+- Nội dung `<aside>` cần liên quan gián tiếp đến nội dung xung quanh có trên trang.
+    <p align = "center">
+    <img width = 500 src="../images/lesson2/aside.png">
+    </p>
+### 14.1.7. Phần tử HTML `<figure>` và `<figcaption>`
+- Phần tử `<figure>` chỉ định nội dung độc lập, như hình minh họa, sơ đồ, ảnh, danh sách mã, v.v.
+
+- Phân tử `<figcaption>` xác định chú thích cho một phần tử `<figure>`. Phần tử `<figcaption>` có thể được đặt làm phần tử con đầu tiên hoặc cuối cùng của một `<figure>`.
+
+    <p align = "center">
+    <img width = 500 src="../images/lesson2/figure.png">
+    </p>
+
+## 15. HTML style guide
+Tài liệu HTML được viết theo một quy tắc nhất quán, gọn gàng giúp cho người đọc dễ hiểu hơn.  
+
+Một số quy tắc hướng dẫn để tạo 1 tài liệu HTML tốt:
+- Luôn khai báo loại tài liệu là dòng đầu tiên trong tài liệu HTML: `<!DOCTYPE html>`
+- Nên sử dụng tên phần tử được viết bằng chữ thường.
+- Có thẻ đóng của tất cả các phần tử trong HTML: `<p></p>`; `<h1></h1>`,...
+- Sử dụng tên thuộc tính được viết bằng chữ thường: `style`, `href`, `src`,...
+- Luôn chỉ định thuộc tính `alt`, `width` và `height` cho hình ảnh: `<img src="html5.gif" alt="HTML5" style="width:128px;height:128px">` 
+- HTML cho phép khoảng trắng xung quanh các dấu bằng. Nhưng không gian ít hơn sẽ dễ đọc hơn và nhóm các thực thể lại với nhau tốt hơn. Vd: Cách viết  `<link rel="stylesheet" href="styles.css">` tốt hơn `<link rel = "stylesheet" href = "styles.css">`
+- Tránh các dòng mã dài, không thuận tiên khi phải cuộn sang trái-phải để đọc code.
+- Không thêm dòng trống, khoảng trắng hoặc thụt lề mà không có lý do.
+- Không bao giờ bỏ qua phần tử `<title>`. Nội dung của tiêu đề trang rất quan trọng đối với việc tối ưu hóa công cụ tìm kiếm (SEO)! Tiêu đề trang được sử dụng bởi các thuật toán của công cụ tìm kiếm để quyết định thứ tự khi liệt kê các trang trong kết quả tìm kiếm.
+- Luôn bao gồm thuộc tính `lang` bên trong thẻ `<html>`, để khai báo ngôn ngữ của trang Web. Điều này có nghĩa là để hỗ trợ các công cụ tìm kiếm và trình duyệt.
+- Đặt chế độ xem viewport.
