@@ -113,17 +113,28 @@ Hãy sử dụng các kiến thức HTML cơ bản để thực hiện chỉnh s
 
 Cụ thể:
 
-- Sử dụng thẻ `<title>` để làm tiêu đề cho trang web `Evergreen Valley College Information`
-- Dòng đầu tiên là heading cấp 1 (thẻ `<h1>`)
-- Dòng 3, đoạn chữ `Only the educated are free` sẽ là một trích dẫn quotation, từ `Discourses` sẽ là một citation
-- Dòng 5, 10, 17 và 35 sẽ là heading cấp 2 (thẻ `<h2>`)
-- Với dòng 7 và 8, hãy làm theo yêu cầu mà dòng đó viết
-- Từ `GED` ở dòng 13 là viết tắt của một định nghĩa, tương tự với từ `SSN` ở dòng 37
-- Từ `must` ở dòng 19 và từ `required` ở dòng 40 được nhấn mạnh (emphasized)
-- Từ `complete` ở dòng 23 là một từ được nhấn mạnh (strongly emphasized text)
-- Số `1` sau từ `older` ở dòng 12 sẽ cần được đẩy thành superscript
-- Dòng 30, 31, 32, và 33 sẽ nằm ở các dòng riêng biệt, và tất cả các dòng đó không phải nằm chung trong cùng 1 đoạn văn
-- Dòng 43 và 44, chữ sẽ nhỏ hơn bình thường, số `1` ở đầu dòng 43 cần được đẩy thành superscript
+- Sử dụng thẻ `<title>` để làm tiêu đề cho trang web `Evergreen Valley College Information`.
+
+- Dòng đầu tiên là heading cấp 1 (thẻ `<h1>`).
+
+- Dòng 3, đoạn chữ `Only the educated are free` sẽ là một trích dẫn quotation, từ `Discourses` sẽ là một citation.
+
+- Dòng 5, 10, 17 và 35 sẽ là heading cấp 2 (thẻ `<h2>`).
+
+- Với dòng 7 và 8, hãy làm theo yêu cầu mà dòng đó viết.
+
+- Từ `GED` ở dòng 13 là viết tắt của một định nghĩa, tương tự với từ `SSN` ở dòng 37.
+
+- Từ `must` ở dòng 19 và từ `required` ở dòng 40 được nhấn mạnh (emphasized).
+
+- Từ `complete` ở dòng 23 là một từ được nhấn mạnh (strongly emphasized text).
+
+- Số `1` sau từ `older` ở dòng 12 sẽ cần được đẩy thành superscript.
+
+- Dòng 30, 31, 32, và 33 sẽ nằm ở các dòng riêng biệt, và tất cả các dòng đó không phải nằm chung trong cùng 1 đoạn văn.
+
+- Dòng 43 và 44, chữ sẽ nhỏ hơn bình thường, số `1` ở đầu dòng 43 cần được đẩy thành superscript.
+
 - Các dòng sau sẽ cùng nằm trong một đoạn văn
     
     + Dòng 7 - 8

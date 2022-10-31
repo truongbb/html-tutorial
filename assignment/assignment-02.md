@@ -90,10 +90,14 @@ Hãy sử dụng các kiến thức HTML cơ bản để thực hiện chỉnh s
 
 Cụ thể:
 
-- Sử dụng thẻ `<title>` để làm tiêu đề cho trang web `About Knitting`
-- Dòng đầu tiên là heading cấp 1 (thẻ `<h1>`)
-- Dòng 6 và 18 sẽ là heading cấp 2 (thẻ `<h2>`)
-- Dòng 26 sẽ là heading cấp 3 (thẻ `<h3>`)
+- Sử dụng thẻ `<title>` để làm tiêu đề cho trang web `About Knitting`.
+
+- Dòng đầu tiên là heading cấp 1 (thẻ `<h1>`).
+
+- Dòng 6 và 18 sẽ là heading cấp 2 (thẻ `<h2>`).
+
+- Dòng 26 sẽ là heading cấp 3 (thẻ `<h3>`).
+
 - Các dòng sau sẽ cùng nằm trong một đoạn văn
   
   + Dòng 3 và 4
@@ -101,6 +105,8 @@ Cụ thể:
   + Dòng 20 tới dòng 24
   + Dòng 28 tới dòng 33
 
-- Dòng 3 và 4 có chữ nhỏ hơn bình thường
-- Từ `Wikipedia` ở dòng 3 là từ trích dẫn (citation)
-- Từ `entirely` ở dòng 9 được nhấn mạnh (emphazied)
+- Dòng 3 và 4 có chữ nhỏ hơn bình thường.
+
+- Từ `Wikipedia` ở dòng 3 là từ trích dẫn (citation).
+
+- Từ `entirely` ở dòng 9 được nhấn mạnh (emphazied).

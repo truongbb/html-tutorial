@@ -76,16 +76,27 @@ across the Southern California mountains by Wednesday afternoon.
 Nếu mở file trên trình duyệt, ta có thể thấy rằng chúng chưa được style bằng CSS. Nhiệm vụ của bài tập này cụ thể như sau:
 
 - Thay từ `Your Name` ở thẻ `<title>` bằng tên của bạn.
+
 - Phần thân của trang web sẽ có ảnh nền là ảnh `noaa2.png`. ![](./images/noaa2.png)
+
 Ảnh nền sẽ được lặp lại theo chiều dọc (của trục y).
+
 - Font chữ của trang web sẽ là Arial, Helvetica, hoặc bất kì font nào thuộc họ `sans-serif`. Lề bên trái là 70px (margin left), lề này được dành ra để cho hình nền có thể hiển thị.
+
 - Tất cả các thẻ `<h1>` đều được in nghiêng và đậm.
+
 - Tất cả các thẻ `<h2>` đều là chữ trắng trên nền xanh da trời, với padding là 0.25em và lề dưới (margin bottom) là 0.25em.
+
 - Thẻ `<dl>` có lề trái (margin left) là 1em. Các thẻ `<dt>` được in đậm và độ lớn của chữ là 125% so với độ lớn thông thường. Các thẻ `<dd>` đều có lề trên và dưới (margin top, margin bottom) là 0.25em, lề trái (margin left) là 1.5em.
+
 - Các thẻ `<div>` đều có *đường viền dưới* là dấu gạch ngang với độ dày 2px và màu mang giá trị `#00b2b2`. Các thẻ này ngoài ra còn có padding 1.5em và margin 1.5cm.
+
 - Các thẻ `<h3>` đều được đưa vào giữa của trang web, in nghiêng và không có margin top, bottom. Màu của các chữ trong thẻ `<h3>` này sẽ là 90% đỏ, 70% xanh lá và 0% xanh dương.
+
 - Tất cả các câu được bắt đầu bằng chữ `High` hoặc `Highs` thì sẽ đều được hiển thị bằng màu đỏ. Tất cả các câu được bắt đầu bằng từ `Low` hoặc `Lows` thì sẽ được hiển thị bằng màu tím.
+
 - Tất cả các đoạn văn đều có độ rộng của dòng (line height) là 12%.
+
 - Đối với thẻ `<p>` cuối cùng, dòng đầu tiên sẽ thụt đầu dòng 1em (indent 1 em). Câu văn `There is a chance for isolated showers across the Southern California mountains by Wednesday afternoon` sẽ được in đậm và có màu nền mang giá trị `#ffffcc`.
 
 

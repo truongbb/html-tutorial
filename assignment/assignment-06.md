@@ -1,4 +1,4 @@
-# HTML Assignment 07 - Bài tập HTML 07
+# HTML Assignment 06 - Bài tập HTML 06
 
 Sử dụng các kiến thức về HTML, đặc biệt là về bảng biểu (table) để thể hiện trang web tĩnh có nội dung như sau:
 
