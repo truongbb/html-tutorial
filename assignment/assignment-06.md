@@ -2,13 +2,13 @@
 
 Sử dụng các kiến thức về HTML, đặc biệt là về bảng biểu (table) để thể hiện trang web tĩnh có nội dung như sau:
 
-![](./images/result-07.png)
+![](./images/result-06.png)
 
 Dưới đây là gợi ý: 
 
 - Chia dòng
 
-![](./images/result-07-hint.png)
+![](./images/result-06-hint.png)
 
 - Các màu sử dụng: 
 
