@@ -19,7 +19,7 @@
 - Năm 2014, HTML được nâng cấp lên HTML5 với sự cải tiến rõ rệt.
 
 # 3. Các phần mềm sử dụng để lập trình HTML
-- HTML documents là files được kết thúc `.html` hay `.htm`. Với những file này bạn có thể xem bằng cách sử dụng bất kỳ trình duyệt nào (Google Chrome, Firefox, Safari,…). 
+- HTML documents là files được kết thúc bằng `.html` hay `.htm`. Với những file này bạn có thể xem bằng cách sử dụng bất kỳ trình duyệt nào (Google Chrome, Firefox, Safari,…). 
 - Mục đích của trình duyệt web (Chrome, Edge, Firefox, Safari) là đọc các tài liệu HTML và hiển thị chúng một cách chính xác.
 Trình duyệt không hiển thị các thẻ HTML, nhưng sử dụng chúng để xác định cách hiển thị tài liệu.
 - Các trình soạn thảo văn bản HTML được sử dụng để tạo và sửa đổi các trang web. HTML là một tập tin siêu văn bản nên chúng ta có thể dùng các chương trình soạn thảo văn bản không có chức năng định dạng văn bản để tạo ra một tập tin HTML. Một số trình soạn thảo để viết một tập tin  html như Visual Studio Code, SubLime Text, Notepad++, TextEdit... Miễn là sau đó chúng ta phải lưu tập tin thành đuôi `.html` hoặc `.htm` và sử dụng trình duyệt website để đọc nó.

@@ -78,6 +78,7 @@ VD:
 <p align = "center">
 <img width = 500 src="../images/lesson2/color_link2.png">
 </p>
+
 - Đây là trạng thái màu sau khi chúng ta thay đổi bằng CSS. Liên kết unvisited có màu đen và không có gạch chân, liên kết unvisited có màu đỏ và không có gạch chân
 
 ```html
@@ -1072,7 +1073,7 @@ Khai báo `meta viewport`
 -  W3.CSS
 - Bootstrap
 
-## 14. HTML `semantic` elements: phần tử ngữ ngĩa
+## 14. HTML `semantic` elements: phần tử ngữ nghĩa
 - Phần tử ngữ nghĩa là những phần tử mô tả rõ ràng ý nghĩa về cấu trúc của phần tử đó đối với các trình duyệt và lập trình viên. Nói một cách dễ hiểu hơn có nghĩa là chỉ cần đọc tên các element này là chúng ta có thể hiểu được nội dung bên trong element này nói về cái gì.
 - Hiện nay có rất nhiều website vẫn đang thiết kế dựa trên các mã HTML như sau để tạo giao diện có menu điều hướng (nav), đầu trang (header) và cuối trang (footer):
 ```html
