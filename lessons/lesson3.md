@@ -1,5 +1,4 @@
 ## 1. HTML Computer Code
-Máy tính có định dạng và kiểu văn bản duy nhất để hiển thị các thông báo liên quan đến code. Có một số phần tử có sẵn của HTML để đánh dấu mã máy tính:
 ## 1.1. Thẻ `<code>`
 - Thẻ `<code>` được sử dụng để định nghĩa đoạn mã máy tính. Trong quá trình tạo các trang web, đôi khi sẽ cần hiển thị đoạn mã lập trình máy tính.
 - Cú pháp: `<code> Nội dung mã máy tính ... </code>`
@@ -9,15 +8,15 @@ Máy tính có định dạng và kiểu văn bản duy nhất để hiển th�
 
 *Lưu ý*: Nội dung trong thẻ `<code>` được hiển thị bằng font chữ `monospace` mặc định của trình duyệt. Do đó có một số kích thước và kiểu font chữ khác với thẻ tiêu đề cơ bản hay thẻ đoạn văn. 
 
-## 1.2. Thẻ `<kdb>`
-- Thẻ `<kdb>` là một thẻ ngữ pháp và được sử dụng để xác định dữ liệu nhập vào từ bàn phím. 
+## 1.2. Thẻ `<kbd>`
+- Thẻ `<kbd>` là một thẻ ngữ pháp và được sử dụng để xác định dữ liệu nhập vào từ bàn phím. 
 - Cú pháp: `<kbd> Contents... </kbd>`
  
  VD:<p align = "center">
     <img width = 500 src="../images/lesson3/kbd.png">
     </p>
 - Một số đặc điểm của thẻ `<kbd>`:
-    - Nội dung trong thẻ `<kdb>` được hiển thị bằng font chữ `monospace` mặc định của trình duyệt.
+    - Nội dung trong thẻ `<kbd>` được hiển thị bằng font chữ `monospace` mặc định của trình duyệt.
     - Có thể đạt những hiệu ứng phong phú hơn với CSS.
     - Không có những thuộc tính thẻ cụ thể trong thẻ này.
 
@@ -77,7 +76,7 @@ VD: Một thẻ `<p>` sử dụng dấu cách không ngắt, và 1 thẻ `<p>` s
 </p>
 ```
 - Kết quả:
-    - Ở thẻ `<p>` thứ 2, trước nội dung `This sentence will be line breaks.`, chúng ta thêm rất 3 dấu cách khoảng trắng ở đó, nhưng khi chạy hiển thị trình duyệt tự động xóa 2 dấu cách trong số đó. 
+    - Ở thẻ `<p>` thứ 2, trước nội dung `This sentence will be line breaks.`, chúng ta thêm 3 dấu cách khoảng trắng ở đó, nhưng khi chạy hiển thị trình duyệt tự động xóa 2 dấu cách trong số đó. 
     - Còn ở thẻ `<p>` thứ 1, chúng ta sử dụng dấu cách không ngắt, khi hiển thị trình duyệt vẫn giữ nguyên khoảng trống đó.
 
     <p align = "center">
@@ -92,7 +91,7 @@ VD: Một thẻ `<p>` sử dụng dấu cách không ngắt, và 1 thẻ `<p>` s
 
 ## 2.3. Kết hợp dấu phụ và chữ
 - Dấu phụ là một "glyph" được thêm vào một chữ cái. 
-- Các dấu phụ như dấu huyền (`̀) và dấu sắc (́ ) được gọi là dấu trọng âm. Nó có thể xuất hiện cả bên trên và bên dưới một chữ cái, bên trong một chữ cái và giữa hai chữ cái. 
+- Các dấu phụ như ``dấu huyền (`)`` và `dấu sắc (́ )` được gọi là dấu trọng âm. Nó có thể xuất hiện cả bên trên và bên dưới một chữ cái, bên trong một chữ cái và giữa hai chữ cái. 
 - Dấu phụ có thể được sử dụng kết hợp với các ký tự chữ và số để tạo ra một ký tự không có trong bộ ký tự (mã hóa) được sử dụng trên trang. 
 - Đây là danh sách một số dấu phụ.
     <p align = "center">
@@ -101,7 +100,7 @@ VD: Một thẻ `<p>` sử dụng dấu cách không ngắt, và 1 thẻ `<p>` s
 
 # 3. HTML Symbols
 - `Symbol (ký hiệu)` là những ký hiệu không có trên bàn phím và có thể được thêm vào tài liệu bằng những thực thể.
-## 3.1. Thể thể ký hiệu
+## 3.1. Thực thể ký hiệu
 - Nhiều `ký hiệu toán học`, `kỹ thuật`, `tiền tệ` không có trên bàn phím cơ bản của chúng ta. Để thêm được những ký hiệu đó vào tài liệu HTML, chúng ta sử dụng tên thực thể hoặc số thực thể (số hệ thập phân hoặc hệ thậ lục phân) cho những ký hiệu đó.
 
 VD: Hiển thị ký hiệu tổng sigma (∑) trong toán học, chúng ta có thể sử dụng 1 trong 3 cách sau (tên thực thể, số thập phân và thập lục phân):
@@ -430,8 +429,9 @@ VD:
 - `<input type="hidden">` định nghĩa một trường đầu vào bị ẩn đi (người dùng không xem được trường này).
 - Một trường ẩn đi thường lưu trữ những gì mà cơ sở dữ liệu ghi lại để cập nhật dữ liệu khi biểu mẫu được gửi đi.  
 
-*Lưu ý:* Khi giá trị trong trường ẩn này không được hiển thị cho người dùng xem trên nội dung của trang web, những nó có thể xem được (và có thể chỉnh sửa) bằng cách sử dụng bất kỳ công cụ phát triển web nào hoặc chức năng "Xem nguồn trang" trên trình duyệt
-- Không sử dụng trường đầu vào ẩn cho một biểu mẫu bảo mật.
+*Lưu ý:* 
+- Khi giá trị trong trường ẩn này không được hiển thị cho người dùng xem trên nội dung của trang web, nhưng nó có thể xem được (và có thể chỉnh sửa) bằng cách sử dụng bất kỳ công cụ phát triển web nào hoặc chức năng "Xem nguồn trang" trên trình duyệt
+- Các trường `input hidden` thường được sử dụng để lưu trữ dữ liệu tạm thời trên web mà không cho người sử dụng nhìn thấy trực tiếp, các dữ liệu này thường sẽ vẫn xuất hiện trong cấu trúc html của web, vì vậy không nên lưu trữ các dữ liệu mang tính riêng tư, bảo mật hoặc bản quyền để tránh bị lộ khi người dùng biết một chút thủ thuật hoặc code về HTML.
     <p align="center">
     <img src="../images/lesson3/hidden.png" width=500>
     </p>
@@ -454,6 +454,7 @@ VD:
     <img src="../images/lesson3/range.png" width=500>
     </p>
 
+*Lưu ý:* Chúng ta có thể tham khảo thêm các loại input khác tại [HTML Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
 ### 7.4.2. Thẻ `<label>`
 - Thẻ `<label>` định nghĩa nhãn cho thành phần `<input>`.
 - Thẻ `<label>` không hiển thị bất cứ gì đặc biệt cho người dùng, tuy nhiên nó cung cấp một cải thiện cho người sử dụng chuột, nếu click chuột vào nhãn, sẽ đưa con trỏ chuột vào vùng `<input>`.
@@ -468,9 +469,9 @@ VD:
 ```
 ### 7.4.3. Phần tử `<select>`
 - Phần tử `<select>` xác định một danh sách thả xuống
-- Phần tử <option> được sử dụng để định nghĩa 1 lựa chọn có thể được chọn trong danh sách.
+- Phần tử `<option>` được sử dụng để định nghĩa 1 lựa chọn có thể được chọn trong danh sách.
 - Mặc định, lựa chọn đầu tiên trong danh sách là đã được chọn.
-- Để định nghĩa một lựa chọn trước, thêm thuộc tính `selected` lựa chọn đấy  
+- Để định nghĩa một lựa chọn mặc định, thêm thuộc tính `selected` vào lựa chọn đấy  
 VD:
     <p align="center">
     <img src="../images/lesson3/select.png" width=500>
@@ -510,6 +511,9 @@ VD:
     <img src="../images/lesson3/datalist.png" width=500>
     </p>
  
+ ***Lưu ý:* Sự khác biệt giữa `<select>` và `<datalist>`**
+ - Với `<select>`, người dùng chỉ có thể chọn các giá trị đã được liệt kê ra trong danh sách bằng các thẻ `<option>`. Còn với `<datalist>`, người dùng có thể chọn 1 trong các giá trị trong danh sách hoặc có thể nhập 1 giá trị lựa chọn khác không có trong danh sách bằng trường input.
+ - Điểm khác thứ 2: với `<select>` sẽ luôn có một giá trị được mặc định trước, còn `<datalist>` thì không có giá trị mặc định cho trường input.
 ### 7.4.7. Phần tử `<output>`
 - Phần tử `<output>` đại diện cho kết quả của một phép tính (giống như một phép tính được thực hiện bởi tập lệnh).
 
@@ -622,7 +626,7 @@ VD:
 
 ### 7.5.12. Thuộc tính `height` và `width`
 - Thuộc tính `height` và `width` xác định chiều cao và độ rộng của một phần tử `<input type="image">`
-- L`uôn chỉ định cả thuộc tính chiều cao và chiều rộng cho hình ảnh`. Nếu chiều cao và chiều rộng được thiết lập, không gian cần thiết cho hình ảnh sẽ được dành riêng khi trang được tải. Nếu không có các thuộc tính này, trình duyệt không biết kích thước của hình ảnh và không thể dành không gian thích hợp cho nó. Hiệu quả sẽ là bố cục trang sẽ thay đổi trong quá trình tải (trong khi tải hình ảnh).
+- `Luôn chỉ định cả thuộc tính chiều cao và chiều rộng cho hình ảnh`. Nếu chiều cao và chiều rộng được thiết lập, không gian cần thiết cho hình ảnh sẽ được dành riêng khi trang được tải. Nếu không có các thuộc tính này, trình duyệt không biết kích thước của hình ảnh và không thể dành không gian thích hợp cho nó. Hiệu quả sẽ là bố cục trang sẽ thay đổi trong quá trình tải (trong khi tải hình ảnh).
 
 VD: `<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">`
 
@@ -649,16 +653,16 @@ VD:
 - `Autocomplete` cho phép những trình duyệt dự đoán trước những giá trị. Khi người dùng bắt đầu nhập vào một trường, trình duyệt hiển thị ra những lựa chọn để điền vào trường dữ liệu đó, dựa trên những giá trị  đã được nhập trước đó.
 
 - VD:
-    - Trường Firstname sử dụng thuộc tính `autocomplte = "on"`
+    - Trường Firstname sử dụng thuộc tính `autocomplete = "on"`
     <p align="center">
     <img src="../images/lesson3/auto.png" width=500>
     </p>
-    - Trường Firstname sử dụng thuộc tính `autocomplte = "off"`
+    - Trường Firstname sử dụng thuộc tính `autocomplete = "off"`
     <p align="center">
     <img src="../images/lesson3/auto_off.png" width=500>
     </p>
 
-## 7.6. Thuộc tính `from*` cho phần tử `<input>`
+## 7.6. Thuộc tính `form*` cho phần tử `<input>`
 ### 7.6.1. Thuộc tính `form`
 - Thuộc tính `form` định nghĩa biểu mẫu mà phần tử `<input>` phụ thuộc vào.
 - Giá trị của thuộc tính này phải `trùng với` giá trị của `thuộc tính id `của thẻ `<form>` mà `nó phụ thuộc`.
@@ -695,7 +699,7 @@ VD:
 - Thuộc tính này ghi đè thuộc tính `enctype` của phần tử <form>.
 - Thuộc tính này hoạt động với loại input: submit và image.
 
-VD: Một biểu mẫu có hai nút gửi. Đầu tiên gửi dữ liệu biểu mẫu với mã hóa mặc định, thứ hai gửi dữ liệu biểu mẫu được mã hóa dưới dạng "nhiều phần / biểu mẫu-dữ liệu":
+VD: Một biểu mẫu có hai nút gửi. Đầu tiên gửi dữ liệu biểu mẫu với mã hóa mặc định, thứ hai gửi dữ liệu biểu mẫu được mã hóa dưới dạng "multipart/form-data":
 ```html
 <form action="/action_page_binary.asp" method="post">
   <label for="fname">First name:</label>
@@ -705,6 +709,12 @@ VD: Một biểu mẫu có hai nút gửi. Đầu tiên gửi dữ liệu biểu
   value="Submit as Multipart/form-data">
 </form>
 ```
+- Ngoài ra còn có thuộc tính formenctype cho `<button>`
+VD: Một biểu mẫu có hai nút gửi. Nút gửi đầu tiên gửi dữ liệu biểu mẫu với mã hóa ký tự mặc định và nút thứ hai gửi dữ liệu biểu mẫu không có mã hóa ký tự:
+
+<p align="center">
+<img src="../images/lesson3/button_formenctype.png" width=500>
+</p>
 
 ### 7.6.4. Thuộc tính `formmethod`
 - Thuộc tính `formmethod` định nghĩa giao thức HTTP cho việc gửi dữ liệu biểu mẫu tới URL xử lý.

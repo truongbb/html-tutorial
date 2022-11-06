@@ -206,10 +206,15 @@ VD:
 ```
 
 #### a. Background Repeat
-- Nếu hình nền có kích thước nhỏ hơn phần tử HTML, thì hình ảnh đó sẽ bị lặp lại, theo chiều ngang, chiều dọc cho đến cuối phần tử HTML đó.
-<p align = "center">
-<img width = 500 src="../images/lesson2/repeat_img.png">
-</p>
+- Nếu hình nền có kích thước nhỏ hơn phần tử HTML, thì hình ảnh đó sẽ bị lặp lại, theo chiều ngang, chiều dọc cho đến cuối phần tử HTML đó.  
+VD:
+    ```css
+    <style>
+    body {
+        background-image: url('example_img_girl.jpg');
+    }
+    </style>
+    ```
 
 <p align = "center">
 <img width = 500 src="../images/lesson2/repeat_img1.png">
@@ -600,7 +605,11 @@ li a:hover {
 - Ngoài ra có những phần tử khối khác trong HTML:
 
 ```html
-<address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1>-<h6>, <header>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>
+<address>, <article>, <aside>, <blockquote>, <canvas>, <dd>,
+ <div>, <dl>, <dt>, <fieldset>, <figcaption>, 
+<figure>, <footer>, <form>, <h1>-<h6>, <header>, 
+<hr>, <li>, <main>, <nav>, <noscript>, <ol>, <p>, 
+<pre>, <section>, <table>, <tfoot>, <ul>, <video>
 ```
    *Lưu ý*: Các thẻ nào mà chưa được học thì sẽ được học chi tiết sau.
 
@@ -609,7 +618,12 @@ li a:hover {
 - Các phần tử inline sẽ chiếm một diện tích đúng bằng phần nội dung mà nó đang có, không hơn không kém.
 - Dưới đây là những thẻ nội tuyến trong HTML: 
 ```html
-<a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>, <dfn>, <em>, <i>, <img>, <input>, <kbd>, <label>, <map>, <object>, <output>, <q>, <samp>, <script>, <select>, <small>, <span>, <strong>, <sub>, <sup>, <textarea>, <time>, <tt>, <var>
+<a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>,
+<button>, <cite>, <code>, <dfn>, <em>, <i>, 
+<img>, <input>, <kbd>, <label>, <map>, <object>, 
+<output>, <q>, <samp>, <script>, <select>, <small>,
+<span>, <strong>, <sub>, <sup>, <textarea>,
+<time>, <tt>, <var>
 ```
 *Lưu ý*: Các thẻ nào mà chưa được học thì sẽ được học chi tiết sau.
 - Thẻ `<span>` là một thẻ nội tuyến, thường được sử dụng để đánh dấu một phần của một đoạn text, hoặc một phần của một tài liệu. Nó không yêu cầu những thuộc tính, nhưng các thuộc tính như `style`, `id`, `class` thường hay sử dụng.
