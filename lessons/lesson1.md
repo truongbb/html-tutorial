@@ -223,7 +223,7 @@ HTML Colors có các phương thức khác nhau để đặt màu sắc cho các
 ### 7.7.1 HTML Colors - Color names
 - Một màu sắc có thể được chỉ định bằng cách sử dụng trực tiếp tên của màu đó: green, blue, red, black,... 
 - HTML hỗ trợ [140 tên màu tiêu chuẩn.](https://www.w3schools.com/colors/colors_names.asp).   
-- Có thể sử dụng thuộc tính `<style>` đặt trong thẻ mở của các HTML element mà bạn muốn thiết lập màu sắc 
+- Có thể sử dụng thuộc tính `<style>` đặt trong thẻ mở của các HTML element mà ta muốn thiết lập màu sắc 
 VD:  Background Color, Text Color, Border Color   
 
 <p align = "center">
