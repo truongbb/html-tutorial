@@ -1,4 +1,14 @@
 # **Giới thiệu về HTML**
+
+# 0. Contents
+1. Khái niệm
+2. Lịch sử
+3. Các phần mềm sử dụng để lập trình HTML
+4. Cấu trúc trang HTML
+5. HTML element
+6. HTML Attributes: thuộc tính HTML
+7. Tìm hiểu về các element có trong HTML
+
 # 1. Khái niệm
 - HTML viết tắt của `HyperText Markup Language` (Ngôn ngữ đánh dấu siêu văn bản).
 - HTML là ngôn ngữ đánh dấu tiêu chuẩn để tạo các trang web.
@@ -60,30 +70,30 @@ Phần này nằm phía sau tiêu đề, bao gồm các thông tin mà bạn mu�
 - Cấu trúc: Một element được xác định bởi 3 thành phần: thẻ mở, nội dung và tên thẻ đóng.  
     `<tagname> Content...</tagname>`  
 *Ví dụ:*  
-<p align = "center">
-<img width = 500 src="../images/lesson1/an_element.png">
-</p>
+    <p align = "center">
+    <img width = 500 src="../images/lesson1/an_element.png">
+    </p>
 
-    - Thẻ mở (opening tag): là thẻ đầu tiên để bắt đầu một HTML element, nó được đặt trong cặp dấu `<>`.     
+    - `Thẻ mở (opening tag)`: là thẻ đầu tiên để bắt đầu một HTML element, nó được đặt trong cặp dấu `<>`.     
 
-    - Nội dung (content): là phần được hiển thị lên trên trang web.  
+    - `Nội dung (content)`: là phần được hiển thị lên trên trang web.  
 
-    - Thẻ đóng (closing tag): là thẻ dùng để kết thúc một HTML element, nó được đặt trong cặp dấu `</>`.   
+    - `Thẻ đóng (closing tag)`: là thẻ dùng để kết thúc một HTML element, nó được đặt trong cặp dấu `</>`.   
 - Tuy nhiên, có một số trường hợp đặc biệt mà phần tử chỉ có một thành phần duy nhất chính là thẻ mở, những phần tử này được gọi là phần tử rỗng, vd như thẻ `<br>`.
 
 - Một tài liệu HTML bao gồm rất nhiều các thẻ element: `<html>`, `<head>`, `<title>`, `<body>`, `<br>`, `<p>`,... 
 - Các thẻ này có thể đặt lồng nhau.  
-<p align = "center">
-<img width = 500 src="../images/lesson1/nested_tag.png">
-</p>
+    <p align = "center">
+    <img width = 500 src="../images/lesson1/nested_tag.png">
+    </p>
 
-- Trong ví dụ trên, các thẻ `body, div, h1, p` được đặt lồng nhau. Thẻ `<body>` là *thẻ cha* của thẻ `<div>`, thẻ `<h1>` và `<p>` là *thẻ con* của thẻ `<div>`. Phân cấp trong thẻ HTML rất quan trọng vì thẻ con có thể kế thừa những hành vi và style từ thẻ cha. Điều này sẽ được thể hiện rõ hơn khi học đến phần CSS.  
+    - Trong ví dụ trên, các thẻ `body, div, h1, p` được đặt lồng nhau. Thẻ `<body>` là *thẻ cha* của thẻ `<div>`, thẻ `<h1>` và `<p>` là *thẻ con* của thẻ `<div>`. Phân cấp trong thẻ HTML rất quan trọng vì thẻ con có thể kế thừa những hành vi và style từ thẻ cha. Điều này sẽ được thể hiện rõ hơn khi học đến phần CSS.  
 
 - Thẻ HTML không phân biệt chữ in hoa hay chữ thường, nhưng *khuyến cáo viết tên các thẻ HTML bằng chữ viết thường.*
 # 6. HTML Attributes: thuộc tính HTML
 - Tất cả các thẻ HTML đều có thể có những thuộc tính.
 - Thuộc tính cung cấp những thông tin bổ sung của các element.
-- Thuộc tính luôn được đặt bên trong thẻ mở, và thường chứa 1 cặp giá trị như **name='value'**.  
+- Thuộc tính luôn được đặt bên trong thẻ mở, và thường chứa 1 cặp giá trị như **property='value'**.  
 ### Một số thuộc tính:  
 - Thuộc tính `href`: Nó được đặt trong thẻ `<a>`. Thẻ `<a>` xác định 1 hyperlink (1 siêu liên kết). Và thuộc tính `href` này chỉ định địa chỉ URL của trang web mà liên kết sẽ đi đến.  
     VD: `<a href="https://www.google.com">Visit Goodle</a>`
@@ -94,7 +104,7 @@ Phần này nằm phía sau tiêu đề, bao gồm các thông tin mà bạn mu�
 
     VD: `<img src="img_girl.jpg" alt="Girl with a jacket">`
 - Thuộc tính `style`: được sử dụng để thêm các style cho một thẻ, ví dụ như màu sắc, kích cỡ, font,...
-# 7. Tìm hiểu về các element có trong HTML
+# 7. Tìm hiểu về các elements có trong HTML
 ## 7.1 HTML Headings
 ### 7.1.1 Tổng quan
 - `HTML Headings` là những tiêu đề hoặc tiêu đề con mà hiển thị lên 1 trang web.  
@@ -102,9 +112,9 @@ Phần này nằm phía sau tiêu đề, bao gồm các thông tin mà bạn mu�
 <img width = 500 src="../images/lesson1/headings.png">
 </p>
 
-- Thẻ heading là một yếu tố không thể thiếu trong SEO giúp cải thiện chất lượng bài viết và hướng dẫn công cụ tìm kiếm dễ dàng tìm kiếm nội dung.
+- Thẻ `Heading` là một yếu tố không thể thiếu trong SEO giúp cải thiện chất lượng bài viết và hướng dẫn công cụ tìm kiếm dễ dàng tìm kiếm nội dung.
 
-- Thẻ Heading trong SEO chia thành: `<h1>`, `<h2>`,... , `<h6>` với thứ tự ưu tiên, kích thước, mức độ quan trọng giảm dần. Đây là các thẻ được sử dụng nhiều để tối ưu website, nhấn mạnh nội dung của chủ đề nói đến trong bài viết.
+- Thẻ `Heading` trong SEO chia thành: `<h1>`, `<h2>`,... , `<h6>` với thứ tự ưu tiên, kích thước, mức độ quan trọng giảm dần. Đây là các thẻ được sử dụng nhiều để tối ưu website, nhấn mạnh nội dung của chủ đề nói đến trong bài viết.
 <p align = "center">
 <img width = 500 src="../images/lesson1/size_heading.png">
 </p>
@@ -112,10 +122,10 @@ Phần này nằm phía sau tiêu đề, bao gồm các thông tin mà bạn mu�
 - Mỗi HTML heading có một kích thước mặc định. Tuy nhiên cũng có thể thay đổi kích thước của bất kỳ heading nào bằng cách sử dụng thuộc tính `style` và giá trị `font-size` của CSS.
 
 ### 7.1.2 Tầm quan trọng của thẻ heading trong SEO
-#### Thể hiện cấu trúc bài viết
-- Heading có chức năng chỉ cho người đọc biết được phần đó, đoạn văn đó nói về chủ đề gì. 
-#### Thẻ heading giúp tăng sức mạnh SEO
-- Sử dụng heading có thể cải thiện chất lượng bài viết, giúp người đọc dễ theo dõi và nắm bắt thông tin đồng thời tăng sức mạnh cho SEO. Ngoài ra heading còn giúp nhấn mạnh từ khóa chính (và từ đồng nghĩa của nó), đồng thời làm rõ nội dung mà trang truyền tải.
+- ### Thể hiện cấu trúc bài viết
+    - Heading có chức năng chỉ cho người đọc biết được phần đó, đoạn văn đó nói về chủ đề gì. 
+- ### Thẻ heading giúp tăng sức mạnh SEO
+    - Sử dụng heading có thể cải thiện chất lượng bài viết, giúp người đọc dễ theo dõi và nắm bắt thông tin đồng thời tăng sức mạnh cho SEO. Ngoài ra heading còn giúp nhấn mạnh từ khóa chính (và từ đồng nghĩa của nó), đồng thời làm rõ nội dung mà trang truyền tải.
 
 ### 7.1.3 Phân loại và cách tối ưu heading hiệu quả nhất trong SEO
 - Thẻ Heading `<h1>`: thường đề cập đến nội dung chính mà trang web muốn nói đến. Thẻ này phải chứa từ khóa chính, nội dung có thể trùng hoặc khác với thẻ title. Thẻ `<h1>` chỉ nên xuất hiện 1 lần trong mỗi trang và có nội dung tương ứng, bổ trợ cho `<title>` và thẻ `<meta>` description.   
@@ -134,14 +144,14 @@ VD:
 <img width = 500 src="../images/lesson1/display.png">
 </p>
 
-### HTML Line breaks: xuống dòng
+### 7.2.2. HTML Line breaks: xuống dòng
 - Thẻ `<br>` được sử dụng để ngắt xuống 1 dòng.
 - Thẻ `<br>` là một thẻ trống, tức là nó không có thẻ đóng.  
 
 ## 7.3 HTML Styles
 - Dùng để thêm style cho một element, ví dụ như màu sắc, font chữ, kích thước...
 - Thuộc tính HTML style có cú pháp như sau: `<tagname style = "property:value;">`
-Trong đó, `property` là một đặc tính của CSS (vd: background-color, font-size, color...) và `value` là một giá trị của CSS (vd: green, blue...)
+Trong đó, `property` là một thuộc tính của CSS (vd: `background-color`, `font-size`, `color`...) và `value` là một giá trị của CSS (vd: `green`, `blue`...)
 ## 7.4 HTML Text Formatting
 - HTML chứa 1 số thẻ dùng để định nghĩa chữ với một ý nghĩa cụ thể.  
 
@@ -233,17 +243,17 @@ VD:  Background Color, Text Color, Border Color
 ### 7.7.2 HTML RGB & RGBA Colors
 - Một hệ màu RGB là đại diện của 3 tham số màu RED, GREEN, BLUE; giống như `rgb(red, green, blue)`.   
 - Mỗi tham số màu có giá trị từ 0 - 255. Có nghĩa là sẽ có khoảng 256 x 256 x 256 = 16777216 màu sắc.   
-- VD: rgb(0,0,0): màu đen; rgb(255,255,255): màu trắng; rgb(255,0,0): màu đỏ
+- VD: `rgb(0,0,0): màu đen`; `rgb(255,255,255): màu trắng`; `rgb(255,0,0): màu đỏ`
 
 <p align = "center">
 <img width = 500 src="../images/lesson1/color_rgb.png">
 </p>
 
-- RGBA là mở rộng của hệ màu RGB với 1 tham số alpha chỉ độ trong suốt của màu. Tham số alpha này có giá trị từ 0.0 - 1.0;   
+- RGBA là mở rộng của hệ màu RGB với 1 tham số alpha chỉ độ trong suốt của màu. Tham số alpha này có giá trị từ 0.0 - 1.0;  alpha càng nhỏ thì độ mờ càng cao 
 
 ### 7.7.3 HTML HEX Color
 - Một hệ màu HEX (thập lục phân) được định nghĩa bằng cách sử dụng các giá trị thập lục phân theo dạng `#rrggbb`, mỗi giá trị rr, gg, bb có giá trị từ 00 - FF (tương tự như từ 0 - 255).  
-- VD: #ff0000: màu đỏ; #ffff00: màu vàng, #000000: màu đen  
+- VD: `#ff0000: màu đỏ`; `#ffff00: màu vàng`, `#000000: màu đen ` 
 <p align = "center">
 <img width = 500 src="../images/lesson1/color_hex.png">
 </p>
@@ -259,24 +269,24 @@ VD:  Background Color, Text Color, Border Color
 - Được sử dụng để định dạng cho mỗi HTML element.
 - Sử dụng thuộc tính `style` đặt trong thẻ mở của mỗi element.
 
-VD: <p align = "center">
+    VD: <p align = "center">
 <img width = 500 src="../images/lesson1/color_name.png">
 </p>
 
 ### 7.8.2 Internal CSS
 - Một internal CSS được sử dụng để định nghĩa 1 `style` cho mỗi trang HTML.  
-- Được đặt trong phần `<head>` của một trang HTML, và kết hợp trong một element `<style>`.
-- VD: 
- <p align = "center">
-<img width = 500 src="../images/lesson1/internal_css.png">
-</p>
+- Được đặt trong phần `<head>` của một trang HTML, và kết hợp trong một element `<style>`.  
+    VD: 
+    <p align = "center">
+    <img width = 500 src="../images/lesson1/internal_css.png">
+    </p>
 
 ### 7.8.3 External CSS
 - Một external style sheet được sử dụng để định dạng style cho nhiều trang HTML.
 - Được sử dụng bằng cách thêm một element link vào trong phần `<head>` của mỗi trang HTML.  
 `<link rel="stylesheet" href="file.css">`
-- File css có thể được viết bằng các trình soạn thảo bất kỳ, tuy nhiên file này không chứa bất kỳ mã lệnh HTML nào, và được lưu với đuôi mở rộng `.css`.
-- VD: 
+- File css có thể được viết bằng các trình soạn thảo bất kỳ, tuy nhiên file này không chứa bất kỳ mã lệnh HTML nào, và được lưu với đuôi mở rộng `.css`.   
+VD: 
     - File.html 
     <p align = "center">
     <img width = 500 src="../images/lesson1/html.png">
@@ -286,8 +296,14 @@ VD: <p align = "center">
     <img width = 500 src="../images/lesson1/file_css.png">
     </p>  
     
-**=> Trong 3 phương pháp kể trên, thì khuyến cáo chúng ta nên sủ dụng phương pháp `External CSS`. Vì:**   
+### **=> Trong 3 phương pháp kể trên, thì khuyến cáo chúng ta nên sủ dụng phương pháp `External CSS`. Vì:**   
 - Tổ chức code rõ ràng, ngăn nắp hơn (phân tách html và css ra, không dính dáng tới nhau).  
 - Dễ dàng tìm và sửa lỗi, bảo trì.  
 - Tái sử dụng code ( vì style cho cùng 1 element nhưng có thể áp dụng cho nhiều trang html khác nhau mà không cần code đi code lại).  
 - Kết hợp với cơ chế cache của trình duyệt làm cho trang web load mượt mà hơn.
+
+# Summary
+- Qua bài học đầu tiên này, chúng ta đã có cái nhìn khái quát về HTML:
+    - Về khái niệm, công cụ hỗ trợ lập trình HTML, cấu trúc của 1 trang HTML.
+    - Tìm hiểu về các thuộc tính có trong HTML: href, src, style, alt,...
+    - Tìm hiểu về 1 số phần tử đầu tiên của HTML: heading, paragraphs, styles, formating, comments, colors, css
