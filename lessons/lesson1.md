@@ -52,7 +52,7 @@ Phần này nằm phía sau tiêu đề, bao gồm các thông tin mà bạn mu�
 <img width = 500 src="../images/lesson1/ex1.png">
 </p>
 
-# **=> HTML có phải là một ngôn ngữ lâp trình không?**  
+# **=> HTML có phải là một ngôn ngữ lập trình không?**  
 - HTML có khả năng trong xác định cấu trúc trang web. Bên cạnh đó, HTML còn có thể xác định dữ liệu hiển thị trực tuyến. *`Tuy nhiên, HTML không thể gọi là ngôn ngữ lập trình, HTML được hiểu là một loại ngôn ngữ đánh dấu`*. HTML dùng để đánh dấu dữ liệu trong các thẻ, dùng để định nghĩa dữ liệu và mô tả mục đích của nó với trang web.
 - Các trình duyệt web sẽ đọc HTML để nhận phần nào là tiêu đề, xác định phần nào là đoạn văn, phần nào là liên kết. HTML sẽ mô tả dữ liệu với trình duyệt và trình duyệt sẽ dựa vào đó để hiển thị dữ liệu sao cho phù hợp. 
 - Hơn nữa, `HTML không xử lý logic được nên không được gọi là ngôn ngữ lập trình, khác với các ngôn ngữ khác như C, Java, Python,` ...

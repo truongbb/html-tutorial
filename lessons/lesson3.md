@@ -544,7 +544,7 @@ VD: `<input type="text" id="fname" name="fname" value="John" disabled><br>`
 
 ### 7.5.4. Thuộc tính `size`
 - Thuộc tính `size` định nghĩa chiều dài có thể nhìn thấy trên trình duyệt của một trường dữ liệu. Giá trị mặc định của `size` là 20.
-- Thuộc tính `size` chỉ hoạt động với những loại input sau: text, search, email, password, tel, url.
+- Thuộc tính `size` chỉ hoạt động với những loại input sau: `text, search, email, password, tel, url`.
 
 VD:
 `<input type="text" id="fname" name="fname" value="John" size="4">`
@@ -561,7 +561,7 @@ VD: `<input type="text" id="fname" name="fname" value="John" maxlength="4">`
 
 ### 7.5.6. Thuộc tính `max` và `min`
 - Thuộc tính `max` và `min` chỉ định giá trị tối thiểu và tối đa có thể nhập vào trong một trường dữ liệu.
-- Sử dụng đồng thời hai thuộc tính này sẽ tạo thành một phạm vi của giá trị hợp lệ.
+- Sử dụng đồng thời hai thuộc tính này sẽ tạo thành một phạm vi của giá trị hợp lệ.  
 VD:
 ```html
 <form>
@@ -578,7 +578,7 @@ VD:
 
 ### 7.5.7. Thuộc tính `multiple`
 - Thuộc tính `multiple` định nghĩa rằng người dùng `có thể nhập vào nhiều hơn 1 giá trị` cho mỗi trường dữ liệu.
-- Thuộc tính `multiple` hoạt động đối với loại input: email và file
+- Thuộc tính `multiple` hoạt động đối với loại input: `email` và `file`
 
 VD: `<input type="file" id="files" name="files" multiple>`
     <p align="center">
@@ -595,7 +595,7 @@ VD: Nhập vào 1 số điện thoại có 10 chữ số (không có chữ cái 
 ### 7.5.9. Thuộc tính `placeholder`
 - Thuộc tính `placeholder` định nghĩa một gợi ý ngắn để định nghĩa những giá trị được mong đợi của một trường nhập dữ liệu.
 - Một gợi ý ngắn sẽ được hiển thị trong trường nhập dữ liệu trước khi người dùng nhập một giá trị vào.
-- Thuộc tính `placeholder` hoạt động với những loại input sau: text, search, email, password.
+- Thuộc tính `placeholder` hoạt động với những loại input sau: `text, search, email, password`.
 
 VD:
     <p align="center">
@@ -604,7 +604,7 @@ VD:
 
 ### 7.5.10. Thuộc tính `required` 
 - Thuộc tính `required` định nghĩa một trường dữ liệu phải được nhập vào trước khi thực hiện việc gửi biểu mẫu đi.
-- Thuộc tính `required` hoạt động với những loại input: text, search, email, password, radio...
+- Thuộc tính `required` hoạt động với những loại input: `text, search, email, password, radio`...
 
 VD: 
     <p align="center">
