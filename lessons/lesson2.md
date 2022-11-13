@@ -5,6 +5,7 @@
 4. HTML Tables
 5. HTML Lists
 6. HTML Block & InLine
+
 # 1. HTML Links
 - `Links (Liên kết)` được tìm thấy ở hầu hết các trang web. Nó cho phép những người dùng click vào sẽ chuyển từ trang web này sang trang web khác.
 ## 1.1. HTML Links - HyperLinks
@@ -641,6 +642,36 @@ VD: Danh sách lồng và có chứa hình ảnh trong danh sách.
     ```
 *Lưu ý*: Các thẻ nào mà chưa được học thì sẽ được học chi tiết sau.
 - Thẻ `<span>` là một thẻ nội tuyến, thường được sử dụng để đánh dấu một phần của một đoạn text, hoặc một phần của một tài liệu. Nó không yêu cầu những thuộc tính, nhưng các thuộc tính như `style`, `id`, `class` thường hay sử dụng.
+
+<br>
+
+# Câu hỏi trắc nghiệm ôn tập kiến thức
+
+1. Để canh lề dọc cho các ô trong bảng ta sử dụng thuộc tính:
+    - a. colspan
+    - b. align
+    - c. rowspan
+    - ***d. valign***
+
+2. Để tạo ra những ô mà chúng có thể kéo rộng ra hơn một dòng trên bảng ta sử dụng thuộc tính:
+    - a. colspan
+    - b. align 
+    - ***c. rowspan***
+    - d. valign
+
+3. Để khai báo một danh sách có thứ tự ta sử dụng thẻ:
+    - ***`a. <li>`***
+    - `b. <ul>`
+    - `c. <ol>`
+    - `d. <dl>`
+
+4. Thuộc tính HTML nào xác định một văn bản sẽ dùng thay thế cho hình ảnh, nếu hình ảnh không thể được hiển thị?
+    - a. longdesc
+    - ***b. alt***
+    - c. title
+    - d. src
+
+<br>
 
 # Summary
 - Qua bài học này, chúng ta biết thêm 1 số phần tử nữa của HTML cũng như các thuộc tính có trong từng phần tử đo: links, images, tables,  lists, block & inline.

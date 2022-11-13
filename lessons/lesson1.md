@@ -1,5 +1,3 @@
-# **Giới thiệu về HTML**
-
 # 0. Contents
 1. Khái niệm
 2. Lịch sử
@@ -301,6 +299,48 @@ VD:
 - Dễ dàng tìm và sửa lỗi, bảo trì.  
 - Tái sử dụng code ( vì style cho cùng 1 element nhưng có thể áp dụng cho nhiều trang html khác nhau mà không cần code đi code lại).  
 - Kết hợp với cơ chế cache của trình duyệt làm cho trang web load mượt mà hơn.
+
+<br>
+
+# Câu hỏi trắc nghiệm ôn tập kiến thức
+
+1. Cấu trúc đơn giản của một trang HTML được khai báo theo thứ tự là:
+    - a. HEAD, HTML, BODY
+    - b. HEAD, TITLE, BODY
+    - c. HEAD, BODY, HTML
+    - ***d. HTML, HEAD, BODY***
+<br>
+<br>
+
+2. Để trình bày một đoạn văn bản trong tài liệu HTML ta dùng thẻ:
+    - a. `<hr>`
+    - ***b. `<p>`***
+    - c. `<br>`
+    - d. `<pre>`
+<br>
+<br>
+
+3. Để chỉ định địa chỉ URL của trang web mà liên kết sẽ đi đến, ta sử dụng thẻ `<a>` với thuộc tính:
+    - a. name
+    - b. class
+    - ***c. href***
+    - d. id
+<br>
+<br>
+
+4. HTML hỗ trợ comment trên nhiều dòng hay không?
+    - ***Có***
+    - Không
+<br>
+<br>
+
+5. CSS là viết tắt của?
+    - ***a. Cascading Style Sheets***
+    - b. Colorful Style Sheets
+    - c. Creative Style Sheets
+    - d. Computer Style Sheets
+
+<br>
 
 # Summary
 - Qua bài học đầu tiên này, chúng ta đã có cái nhìn khái quát về HTML:

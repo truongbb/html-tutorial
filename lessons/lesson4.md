@@ -630,6 +630,31 @@ VD:
     src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
     </iframe>
     ```
+
+# Câu hỏi trắc nghiệm ôn tập kiến thức
+
+1. Để khai báo một phần tử điều khiển ẩn có chứa một value để phục vụ cho các mục đích khác trên trang web mà không muốn hiển thị ra, ta dùng thẻ:
+    - a. `<input type = "text">`
+    - ***b. `<input type = "hidden">`***
+    - c. `<input type = "password">`
+    - d. `<textarea>`
+
+<br>
+
+2. Để khai báo một phần tử điều khiển khi nhấn vào sẽ gửi thông tin của form đi, ta sử dụng thẻ:
+    - a. `<input type = "text">`
+    - ***b. `<input type = "submit">`***
+    - c. `<input type = "password">`
+    - d. `<input type = "reset">`
+
+<br>
+
+3. Thuộc tính method của form chỉ ra phương thức mà dữ liệu sẽ được chuyển đến Server. Nếu giá trị là _____, dữ liệu trên form sẽ được gửi như một khối dữ liệu. Nếu giá trị là _____, thì trình duyệt sẽ gửi dữ liệu bằng cách tạo một truy vấn bao gồm Url, tên các điều khiển và các giá trị của các điều khiển trên form:
+    - ***a. Post/get***
+    - b. Get/post
+    - c. Post/none
+    - d. Get/none
+
 # Summary
 - Tại bài học này, chúng ta đã biết cách để tạo ra một biểu mẫu (form) với các thành phần như input, button, checkbox, radio...trên 1 trang HTML
-- Ngoài ra, chúng ta cũng đã biết cách hiển thị các đa phương tiện lên trang web của mình 
+- Ngoài ra, chúng ta cũng đã biết cách hiển thị các đa phương tiện lên trang web của mình.

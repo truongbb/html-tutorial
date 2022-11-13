@@ -15,6 +15,7 @@
 14. HTML Emojis
 15. HTML Charset
 16. HTML URL Encode (Uniform Resource Locators)
+
 # 1. HTML Classes
 
 - Thuộc tính HTML `class` thường được sử dụng để định nghĩa tên một class cho một phần tử HTML.
@@ -835,5 +836,41 @@ VD: Khi nhập URL đầu vào là `Hello Günter`, trình duyệt sẽ mã hóa
 
  Tham khảo bảng mã hóa ASCII tại [ASCII Encoding trong HTML](https://www.w3schools.com/tags/ref_urlencode.asp)
 
+<br>
+
+# Câu hỏi trắc nghiệm ôn tập kiến thức
+
+1. Để định nghĩa một tập các FRAME đơn ta sử dụng thẻ:
+    - `a. <frame>`
+    - `b. <noframe>`
+    - ***`c. <iframe>`***
+    - `d. <frameset>`
+
+<br>
+
+2. Đoạn mã HTML nào thực hiện việc thêm màu nền cho trang web?
+
+    - a. `<body style="color:yellow;">`
+    - b. `<body bg="yellow">`
+    - c. `<background>yellow</background>`
+    - ***d. `<body style="background-color:yellow;">`***
+
+<br>
+
+3. Có những cách nào viết code Javascript để chạy trong trang web?
+    - a. Viết chung với HTML
+    - b. Không thuộc dạng nào
+    - ***c. Cả hai dạng viết tệp riêng hoặc viết trong trang HTML***
+    - d. Viết trên một tệp riêng
+
+<br>
+
 # Summary
-- 
+Trong bài này, chúng ta đã học về:
+- ID, class: hai khái niệm quan trọng và rất hay gặp của HTML và CSS, thậm chí là JavaScript sẽ được học sau này.
+- Đường dẫn tương đối và tuyệt đối.
+- Học sâu hơn về thẻ `head`: meta, viewport, title, description, ...
+- Responsive web: Các khái niệm và kĩ thuật cơ bản để bắt đầu tiếp xúc với responsive web, một khía cạnh mà trong các dự án front end luôn quan tâm tới.
+- HTML semantic nói về ngữ nghĩa và cách sử dụng đúng ngữ nghĩa của các thẻ trong hệ thống thẻ của HTML
+- Cách thể hiện các ký tự đặc biệt trong HTML: Computer code, entity, symbol, emoji.
+- Cách thể hiện icon trong HTML.
