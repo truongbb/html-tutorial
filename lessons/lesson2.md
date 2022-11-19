@@ -5,6 +5,12 @@
 4. HTML Tables
 5. HTML Lists
 6. HTML Block & InLine
+7. HTML Classes
+8. HTML Id
+9. HTML Iframe
+10. HTML JavaScript
+11. HTML File Path
+12. HTML Head
 
 # 1. HTML Links
 - `Links (Liên kết)` được tìm thấy ở hầu hết các trang web. Nó cho phép những người dùng click vào sẽ chuyển từ trang web này sang trang web khác.
@@ -643,7 +649,354 @@ VD: Danh sách lồng và có chứa hình ảnh trong danh sách.
 *Lưu ý*: Các thẻ nào mà chưa được học thì sẽ được học chi tiết sau.
 - Thẻ `<span>` là một thẻ nội tuyến, thường được sử dụng để đánh dấu một phần của một đoạn text, hoặc một phần của một tài liệu. Nó không yêu cầu những thuộc tính, nhưng các thuộc tính như `style`, `id`, `class` thường hay sử dụng.
 
-<br>
+
+# 7. HTML Classes
+
+- Thuộc tính HTML `class` thường được sử dụng để định nghĩa tên một class cho một phần tử HTML.
+- *Nhiều phần tử HTML có thể có chung tên class*. Vì chúng ta muốn các phần tử này có cùng một cách "đối xử" như nhau về mặt nhìn (về css), nên chúng ta dồn chúng lại thành 1 lớp, gọi là class
+- Cách sử dụng thuộc tính `class`:
+    - Thường được sử dụng để chỉ tới tên một class trong một style sheet. Nó có thể được sử dụng bởi một JavaScript để truy cập và thao tác với các phần tử với một tên lớp cụ thể  (sẽ được học chi tiết trong phần JavaScript sau).
+    - Thuộc tính class được sử dụng trong bất kỳ phần tử HTML nào.
+- Cú pháp cho class:
+    - Để tạo một class: viết một ký tự dấu `"."`, theo sau là `tên class`. Sau đó, định nghĩa thuộc tính CSS bên trong cặp dấu ngoặc nhọn `{}`.
+- Các phần tử HTML có thể có nhiều hơn một tên class. Khai báo các tên class trong phần tử HTML *cách nhau bởi 1 khoảng trắng*. Những phần tử này sẽ nhận được `style` của tất cả các tên `class` đó.
+Vd:
+    ```html
+    <div>
+        <button class="btn btn--success ">GO TO NEXT APPOROVAL</button>
+        <button class="btn btn--warn">OK</button>
+        <button class="btn btn--danger">TRY AGAIN</button>
+    </div>
+    ```
+- Style bằng CSS. Ba button ở ví dụ trên đều có tên class btn giống nhau nên sẽ có CSS giống nhau, chỉ khác nhau ở chỗ CSS cho tên class riêng của từng button (ở đây là khác màu sắc)
+    ```css
+        .btn{
+            display: inline-block; /*nam ngang*/
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 14px 48px;
+            border-radius: 50px;
+            min-width: 120px;
+            cursor: pointer; /*di chuot vao btn co pointer ban tay*/
+            transition: opacity 0.2s ease;
+        }
+        .btn--success{
+            background-color: #71be34;
+        }
+        .btn--warn{
+            background-color: #ffb702;
+        }
+        .btn--danger{
+            background-color: #ff6236;
+        }
+    ```
+<p align = "center">
+<img width = 500 src="../images/lesson2/class.png">
+</p>
+
+# 8. HTML Id
+
+- Thuộc tính HTML `id` được sử dụng để định nghĩa một id riêng biệt cho mỗi phần tử HTML
+- *Không thể có 2 phần tử HTML trong một tài liệu HTML có cùng 1 giá trị id.*
+VD: Tồn tại 2 thẻ có cùng một giá trị id
+
+```html
+<div id="header">
+    <h1>YOUR LOGO</h1>
+    <span>Use a single layout to create serveral different looks</span>
+</div>
+<div id="header">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</div>
+```
+*Kết quả:* <p align = "center">
+<img width = 500 src="../images/lesson2/same_id.png">
+</p>
+
+*Giải thích:* Tuy  2 thẻ có `id` giống nhau mà trình duyệt vẫn hiển thị được, điều này được lý giải bởi trình duyệt hiện tại đủ thông minh để cố gắng hiển thị tất cả các thành phần html, nhưng về lý thuyết thì việc cùng `id` sẽ không được phép, nếu cố tình làm vậy sẽ gây lỗi khi thực hiện thao tác với thẻ bằng JS (sẽ được thể hiện trong phần JS).
+- Cách sử dụng thuộc tính `id`
+    - Giá trị của thuộc tính `id` phải `riêng biệt` trong tài liệu HTML.
+    - Thường được sử dụng để chỉ tới tên một class trong một style sheet. Nó có thể được sử dụng bởi một JavaScript để truy cập và thao tác với các phần tử với một id cụ thể.
+    - Thuộc tính class được sử dụng trong bất kỳ phần tử HTML nào.
+- Cú pháp cho id:
+    - Để tạo một class: viết một ký tự dấu `"#"`, theo sau là `tên id`. Sau đó, định nghĩa thuộc tính CSS bên trong cặp dấu ngoặc nhọn `{}`.
+
+- *Quy tắc đặt tên id:* Tên id phải chứa ít nhất một ký tự, không bắt đầu bằng chữ số và không chứa khoảng trắng.
+- VD
+```html
+<div id="tong">
+        <div id="header">
+    
+            <h1>YOUR LOGO</h1>
+            <span>Use a single layout to create serveral different looks</span>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <img src="fly-icon.png" alt="logo">
+            <div id="content-right">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p>
+            </div>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">How we work</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Support</a></li>
+            </ul>
+            <div id="footer-right">
+                <h3>How we work</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+    </div>
+```
+- CSS
+```css
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+#content {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(99, 139, 129);
+}
+#content img {
+    width: 25%;
+}
+#content #content-right {
+    width: 65%;
+    color: white;
+}
+#content #content-right h2 {
+    font-size: 30px;
+    margin-left: -72px;
+}
+#content #content-right p {
+    line-height: 1.3em;
+    text-align: left;
+    margin-left: -72px;
+}
+```
+<p align = "center">
+<img width = 500 src="../images/lesson2/id.png">
+</p>
+
+##  *Điểm khác nhau giữa HTML `class` và `id` là: tên một `class` có thể được sử dụng cho nhiều phần tử HTML khác nhau, còn tên một `id` chỉ có thể sử dụng cho 1 phần tử HTML trong cùng một tài liệu HTML* 
+
+# 9. HTML Iframe
+- HTML Iframe được sử dụng để hiển thị một trang web trong một trang web.
+- Thẻ `<iframe>` định nghĩa một khung nội tuyến (inline frame). Một khung nội tuyến được sử dụng để nhúng một tài liệu khác vào trong một tài liệu HTML hiện tại.
+- Cú pháp: `<iframe src="url" title="description"></iframe>`
+
+- Iframe - Width & Height
+    - Sử dụng thuộc tính width & height để xác định kích thước của `iframe`.
+    - Cũng có thể thêm thuộc tính style vào thẻ `<iframe>` và sử dụng thuộc tính width, height của CSS.
+```html
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+```
+- Xóa bỏ border của Iframe
+    - Mặc định, một `iframe` có một đường viền bao quanh nó. Để xóa đường viền này, thêm thuộc tính style và sử dụng thuộc tính `border` của CSS với giá trị là `none`.
+
+```html
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+```
+
+- Iframe - Target for a link
+    - Một `iframe` có thể được sử dụng để làm khung hiển thị cho một liên kết. 
+    - Thuộc tính `target` của thẻ liên kết `<a>` phải tham chiếu tới thuộc tính name của iframe. 
+
+    <p align = "center">
+    <img width = 500 src="../images/lesson2/iframe_link.png">
+    </p>
+
+# 10. HTML JavaScript
+- `JavaScript` là ngôn ngữ lập trình phổ biến dùng để tạo ra các trang web tương tác. Được tích hợp và nhúng vào HTML giúp website trở nên sống động hơn. JavaScript đóng vai trò như một phần của trang web, thực thi cho phép `Client-Side Script` từ phía người dùng cũng như phía máy chủ (Nodejs) tạo ra các trang web động.
+- Thẻ HTML `<script>`
+    - Thẻ `<script>` được sử dụng để định nghĩa một `client-side script (kịch bản phía máy khách.)`
+    - Phần tử `<script>` chứa các câu lệnh `script` hoặc nó trỏ đến một tệp `script` bên ngoài thông qua thuộc tính `src`.
+    - Để chọn một phần tử HTML, JavaScript thường sử dụng phương thức `document.getElementById()`.
+    ```html
+    <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    ```
+   
+- JavaScript có thể thay đổi nội dung, style, thuộc tính của các phần tử HTML.
+
+    ```html
+    <p id="demo">This is a demonstration.</p>
+
+    <script>
+    function myFunction() { 
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+    </script>
+    ```
+
+    - Ví dụ trên, JS sẽ thay đổi nội dung trong thẻ `<p>` có `id là demo` từ `This is a demostration.` thành `Hello JavaScript!`
+
+- Thẻ HTML `<noscript>` xác định nội dung thay thế sẽ được hiển thị cho người dùng đã tắt `script` trong trình duyệt của họ hoặc có trình duyệt không hỗ trợ `script`.
+
+- Có thể giữ mã JavaScript trong một tệp riêng biệt và sau đó đưa vào bất kỳ nơi nào cần thiết hoặc có thể xác định chức năng bên trong chính tài liệu HTML.
+## 10.1. External JavaScript
+- Nếu xác định một chức năng sẽ được sử dụng trong các tài liệu HTML khác nhau thì tốt hơn nên giữ chức năng đó trong một tệp JavaScript riêng và sau đó đưa tệp đó vào các tài liệu HTML. Một tệp JavaScript sẽ có phần mở rộng là `.js` và nó sẽ được bao gồm trong các tệp HTML bằng thẻ `<script>`.
+    ```html
+    <head>
+        <title>External JS</title>
+        <script type="text/javascript" src="my-scripts.js">
+        </script>
+    </head>
+    ```
+- Ưu điểm của phương pháp `External Javascript`:
+    - Có thể viết một kịch bản Javascript dài và phức tạp.
+    - Việc tách biệt nơi lưu trữ code Javascript và HTML giúp code trở nên gọn gàng hơn.
+    - Tận dụng cơ chế caching của trình duyệt để giúp trang HTML có tốc độ load và render nhanh hơn.
+    - Code Javascript có thể xuất ra dạng nén (.min.js) để có dung lượng nhỏ nhất có thể, từ đó cải thiện tốc độ load trang ở hầu hết các website hiện nay.
+- Nhược điểm:
+    - Tốn nhiều thao tác & bước thực hiện nhất.
+    - Nếu xảy ra lỗi code Javascript, sẽ tốn thời gian để xác định dòng code lỗi đó đang nằm trên tập tin nào.
+## 10.2. Internal JavaScript
+- Có thể viết mã tập lệnh trực tiếp vào tài liệu HTML. Thông thường, sẽ giữ mã tập lệnh trong tiêu đề của tài liệu bằng thẻ `<script>`, nếu không thì có thể đặt mã nguồn của mình ở bất kỳ đâu trong tài liệu nhưng vẫn phải trong thẻ `<script>`.
+- Không giới hạn số lượng câu lệnh JS
+    ```html
+    <head>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            alert('External Javascript đã hoạt động');
+        });
+        </script>
+    </head>
+    ```
+- Ưu điểm:
+    - Có thể viết một kịch bản Javascript dài và phức tạp.
+
+    - Tốn ít thao tác thực hiện hơn so với External Javascript
+- Nhược điểm:
+    - Khó có thể viết một kịch bản Javascript với số lượng lớn dòng code bởi làm thế sẽ khiến file HTML trở nên rất dài và nặng.
+    - Khó quan sát, quản lý cũng như nâng cấp code.
+
+**Kết luận:** Giữa việc viết mã lệnh trong tập tin JavaScript và viết trực tiếp vào trang web thì chúng ta nên dùng cách viết mã lệnh trong tập tin JavaScript (`External JS`). Bởi vì đối với những chương trình lớn khoảng vài trăm hoặc vài nghìn dòng, việc viết vào tập tin JavaScript sẽ giúp ta dễ quan sát, quản lý cũng như cập nhật nâng cấp mã nguồn hơn.
+# 11. HTML File Path: đường dẫn tệp
+- Đường dẫn tệp mô tả vị trí của tệp trong cấu trúc thư mục của trang web.
+- Đường dẫn tệp được sử dụng khi liên kết tới những file bên ngoài trang hiện tại như: hình ảnh, style sheets,...
+- Có 2 đường dẫn tệp là `đường dẫn tuyệt đối` và `đường dẫn tương đối`.  
+
+Hai loaị đường dẫn này đã được trình bày trong phần HTML Images. Ở đây chúng ta sẽ nói thêm về ý nghĩa 1 số ký hiệu đường dẫn tương đối.  
+VD:
+- `<img src="picture.jpg:`: ý nghĩa - picture.jpg đặt cùng thư mục với trang hiện tại.
+- `<img src="images/picture.jpg">`: ý nghĩa - picture.jpg đặt trong thư mục images trong thư mục hiện tại.
+
+- `<img src="/images/picture.jpg">`: ý nghĩa - picture.jpg đặt trong thư mục images ở thư mục gốc của trang web hiện tại.
+- `<img src="../picture.jpg">`: ý nghĩa - picture.jpg đặt trong thư mục tăng một cấp so với thư mục hiện tại.
+# 12. HTML Head
+Phần tử HTML `<head>` là vùng chứa cho các phần tử sau : `<title>`, `<style>`, `<meta>`, `<link>`, `<script>`, `<base>`.
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Meaningful Page Title</title>
+    <base href="https://www.w3schools.com/" target="_blank">
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {background-color: powderblue;}
+        h1 {color: red;}
+        p {color: blue;}
+    </style>
+    <script>
+        function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+</head>
+```
+## 12.1. Phần tử HTML `<head>`
+- Phần tử `<head>` là vùng chứa siêu dữ liệu `meta` (dữ liệu về dữ liệu) và được đặt giữa thẻ `<html>` và thẻ `<body>`.
+
+- Siêu dữ liệu HTML là dữ liệu về tài liệu HTML. Siêu dữ liệu không được hiển thị trên trình duyệt.
+
+- Siêu dữ liệu thường `xác định tiêu đề tài liệu, bộ ký tự, kiểu, tập lệnh và các thông tin meta khác.`
+
+## 12.2. Phần tử HTML `<title>`
+- Phần tử `<title>` xác định tiêu đề của tài liệu. Tiêu đề phải ở dạng văn bản và nó được hiển thị trên thanh tiêu đề của trình duyệt hoặc trong tab của trang.
+
+- Phần tử `<title>` này là bắt buộc trong các tài liệu HTML!
+
+- Nội dung của tiêu đề trang rất quan trọng đối với việc tối ưu hóa công cụ tìm kiếm (SEO)! Tiêu đề trang được sử dụng bởi các thuật toán của công cụ tìm kiếm để quyết định thứ tự khi liệt kê các trang trong kết quả tìm kiếm.
+
+- Phần tử `<title>`:
+
+    - Xác định tiêu đề trong thanh công cụ của trình duyệt.
+    - Cung cấp tiêu đề cho trang khi nó được thêm vào mục yêu thích.
+    - Hiển thị tiêu đề cho trang trong kết quả của công cụ tìm kiếm.
+
+## 12.3. Phần tử `<style>` HTML
+- Phần tử `<style>` được sử dụng để xác định thông tin style cho một trang HTML:
+## 12.4. Phần tử `<link>` HTML
+- Phần tử `<link>` xác định mối quan hệ giữa tài liệu hiện tại và tài nguyên bên ngoài.
+
+- Thẻ `<link>` thường được sử dụng nhất để liên kết với các trang định kiểu bên ngoài
+## 12.5. Phần tử HTML `<script>`
+- Phần tử `<script>` được sử dụng để xác định JavaScripts phía máy khách.
+## 12.6. Phần tử HTML `<base>`
+- Phần tử `<base>` chỉ định URL cơ sở và (hoặc) target cho tất cả các URL tương đối trong một trang.
+
+- Thẻ `<base>` phải có một `href` hoặc một thuộc tính đích hoặc cả hai.
+
+- Chỉ có thể có một phần tử `<base>` duy nhất trong một tài liệu!
+## 12.7. Phần tử HTML `<meta>`
+- Phần tử `<meta>` này thường được sử dụng để chỉ định bộ ký tự, mô tả trang, từ khóa, tác giả của tài liệu và cài đặt chế độ xem.
+
+- Siêu dữ liệu sẽ không được hiển thị trên trang, nhưng được sử dụng bởi các trình duyệt (cách hiển thị nội dung hoặc tải lại trang), bởi các công cụ tìm kiếm (từ khóa) và các dịch vụ web khác.
+
+Ví dụ các chức năng của thẻ `<meta>`:
+- Xác định bộ ký tự được sử dụng:
+```html
+<meta charset="UTF-8">
+```
+- Xác định từ khóa cho công cụ tìm kiếm:
+```html
+<meta name="keywords" content="HTML, CSS, JavaScript">
+```
+- Xác định mô tả về trang web của bạn:
+```html
+<meta name="description" content="Free Web tutorials">
+```
+- Xác định tác giả của một trang:
+```html
+<meta name="author" content="John Doe">
+```
+- Làm mới tài liệu sau mỗi 30 giây:
+```html
+<meta http-equiv="refresh" content="30">
+```
+- Đặt chế độ xem để làm cho trang web trông thích hợp trên tất cả các thiết bị:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0"
+```
+
 
 # Câu hỏi trắc nghiệm ôn tập kiến thức
 
@@ -671,7 +1024,30 @@ VD: Danh sách lồng và có chứa hình ảnh trong danh sách.
     - c. title
     - d. src
 
+5. Để định nghĩa một tập các FRAME đơn ta sử dụng thẻ:
+    - `a. <frame>`
+    - `b. <noframe>`
+    - ***`c. <iframe>`***
+    - `d. <frameset>`
+
+6. Đoạn mã HTML nào thực hiện việc thêm màu nền cho trang web?
+
+    - a. `<body style="color:yellow;">`
+    - b. `<body bg="yellow">`
+    - c. `<background>yellow</background>`
+    - ***d. `<body style="background-color:yellow;">`***
+
+7. Có những cách nào viết code Javascript để chạy trong trang web?
+    - a. Viết chung với HTML
+    - b. Không thuộc dạng nào
+    - ***c. Cả hai dạng viết tệp riêng hoặc viết trong trang HTML***
+    - d. Viết trên một tệp riêng
+
+
 <br>
 
 # Summary
-- Qua bài học này, chúng ta biết thêm 1 số phần tử nữa của HTML cũng như các thuộc tính có trong từng phần tử đo: links, images, tables,  lists, block & inline.
+Qua bài học này, chúng ta biết thêm 1 số phần tử nữa của HTML cũng như các thuộc tính có trong từng phần tử đó: links, images, tables,  lists, block & inline.
+<br/>
+
+Ngoài ra, chúng ta còn tìm hiểu sâu hơn về `Class`, `ID`, những thẻ chi tiết bên trong thẻ `<head>`, về đường dẫn tương đối và tuyệt đối. Mục giới thiệu Javascript cũng là một mục quan trọng, làm tiền đề cho việc học Javascript sau này.
